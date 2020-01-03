@@ -3,24 +3,31 @@ function pageChange(e) {
     $("#album")[0].style.visibility="hidden"
     $("#article")[0].style.visibility="hidden"
     $("#about")[0].style.visibility="hidden"
+    $("#mainline")[0].style.visibility = "hidden"
+    $("#albumline")[0].style.visibility = "hidden"
+    $("#articleline")[0].style.visibility = "hidden"
+    $("#aboutline")[0].style.visibility = "hidden"
+
     switch (e.id) {
         case "menu-main":
-        main.index = 1
             $("#main")[0].style.visibility="visible"
+            $("#mainline")[0].style.visibility = "visible"
         break
         case "menu-album":
-            main.index = 2
             $("#album")[0].style.visibility="visible"
+            $("#albumline")[0].style.visibility = "visible"
             break
         case "menu-article":
-            main.index = 3
             $("#article")[0].style.visibility="visible"
+            $("#articleline")[0].style.visibility = "visible"
             break
         case "menu-about":
-            main.index = 4
             $("#about")[0].style.visibility="visible"
+            $("#aboutline")[0].style.visibility = "visible"
             break
     }
 }
-main.index = 4
-$("#about")[0].style.visibility="visible"
+$("#article")[0].style.visibility="visible"
+$("#articleline")[0].style.visibility = "visible"
+
+
